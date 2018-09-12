@@ -1,0 +1,60 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('truetype');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Nicholas Le
+   Date:  09/11/18 
+   
+   Filename: lake_styles.css
+
+*/
+/* Section Styles*/
+html {
+    background-color: wheat;
+}
+
+body {
+    background-color: linen;
+}
+
+/* Section Styles */
+/* Aside Styles */
+aside {
+    background-color: ;
+    text-align: center;
+}
+
+/* Nav Style */
+header nav a:link,
+header nav a:visited {
+    color: rgb(209, 187, 62);
+    text-decoration: none;
+}
+
+header nav a:active,
+header nav a:hover {
+    background-color: coral;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(250, 254, 253, 1);
+    padding: 5px;
+    text-align: center;
+}
