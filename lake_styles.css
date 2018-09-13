@@ -50,6 +50,16 @@ aside {
     padding: 5px;
 }
 
+aside ul li a:link,
+aside ul li a:visited {
+    text-decoration: none;
+    color: rgb(241, 180, 82);
+}
+
+aside section blockquote {
+    quotes: "\201c""\201d"
+}
+
 /* Nav Style */
 header nav a:link,
 header nav a:visited {
