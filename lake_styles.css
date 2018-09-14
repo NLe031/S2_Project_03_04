@@ -1,5 +1,5 @@
 ﻿@charset "utf-8";
-/* Here the @font-face adds two fonts to the stylesheet so it can be used. */
+/* Here the @font-face adds two fonts to the stylesheet so it can be used. The @import also adds another font. */
 @font-face {
     font-family: champagne;
     src: url('cac_champagne.woff') format('woff'),
