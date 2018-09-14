@@ -1,5 +1,5 @@
 ﻿@charset "utf-8";
-
+/* Here the @font-face adds two fonts to the stylesheet so it can be used. */
 @font-face {
     font-family: champagne;
     src: url('cac_champagne.woff') format('woff'),
@@ -11,6 +11,7 @@
     src: url('DobkinPlain.woff') format('woff'),
         url('DobkinPlain.ttf') format('truetype');
 }
+@import url('https://fonts.googleapis.com/css?family=Mate');
 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
@@ -25,6 +26,7 @@
 
 */
 /* Section Styles*/
+/* The code within changes the background color and adds a font to the page. */
 html {
     background-color: wheat;
 }
@@ -35,16 +37,50 @@ body {
 }
 
 /* Section Styles */
+/* Here the code adds a font and fixes the padding and margin, it also adds color to the text and background in this section and it will change the list markers for the links on the right..*/
 section h1 {
-    font-family: Dobkin;
-    margin: 10px;
-    padding: 5px;
+    font-family: 'Dobkin';
+    margin: 8px;
+    padding: 3px;
     font-size: 3em;
     text-align: center;
-    color: dimgrey;
+    color: #696969;
+    background-color: #f3dfa5;
+}
+section>nav h2 {
+    background-color: lemonchiffon;
+    font-family: 'champagne';
+    text-align: center;
+    margin: 5px;
+    font-size: 2em;
+}
+section blockquote {
+    quotes: "\201c""\201d";
+    margin: 20px 7px;
+    background-color: #e4d5a3;
+    text-align: inherit;
+    padding: 10px;
+}
+
+section blockquote::before {
+    content: open-quote;
+    font-size: 1.5em;
+}
+
+section blockquote::after {
+    content: close-quote;
+    font-size: 1.4em;
+    line-height: 1px;
+}
+section p {
+    font-family: 'mate', serif;
+}
+section nav ul li {
+    list-style-type: circle;
 }
 
 /* Aside Styles */
+/* The code here changes the color of the links in the notes section. */
 aside {
     text-align: center;
     padding: 5px;
@@ -55,12 +91,14 @@ aside ul li a:visited {
     text-decoration: none;
     color: rgb(241, 180, 82);
 }
-
-aside section blockquote {
-    quotes: "\201c""\201d"
+aside>h1 {
+    color: #696969;
+    background-color: linen;
+    font-size: 2.5em;
 }
 
 /* Nav Style */
+/* The code will change the color of the links in the header and change the text decoration when hovered over. */
 header nav a:link,
 header nav a:visited {
     color: rgb(223, 196, 65);
@@ -87,8 +125,11 @@ nav h2 {
 }
 
 /* Footer Styles */
+/* The code in the footer style adds color to the background, text and it will change the padding and margin to fit the page. */
 footer {
-    background-color: rgba(250, 254, 253, 1);
-    padding: 5px;
+    background-color: rgba(250, 254, 253, .9);
+    padding: 8px;
     text-align: center;
+    color: rgba(21, 17, 17,.6);
+    margin: 1px;
 }
