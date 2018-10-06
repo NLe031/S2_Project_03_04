@@ -1,3 +1,7 @@
+<?php
+echo "hurrah boii";
+?>
+
 <!doctype html>
 <html>
 
